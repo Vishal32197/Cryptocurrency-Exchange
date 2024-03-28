@@ -8,12 +8,12 @@
 import Foundation
 import RxRelay
 
-protocol HomeScreenViewModelProtocol {
+protocol CoinListViewModelProtocol {
     var coinList: PublishRelay<[CoinListModel]> { get }
     func getCoinList()
 }
 
-final class HomeScreenViewModel: HomeScreenViewModelProtocol {
+final class CoinListViewModel: CoinListViewModelProtocol {
     var coinList = PublishRelay<[CoinListModel]>()
     private var networkService: NetworkServiceProtocol
     

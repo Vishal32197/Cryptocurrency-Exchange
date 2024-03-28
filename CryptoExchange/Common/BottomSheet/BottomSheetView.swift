@@ -24,14 +24,14 @@ class BottomSheetView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    private lazy var titleLabel: UILabel = {
+    private var titleLabel: UILabel = {
         let label = UILabel()
         label.text = "Bottomsheet"
         label.font = UIFont.boldSystemFont(ofSize: 20)
         return label
     }()
     
-    private lazy var descriptionLabel: UILabel = {
+    private var descriptionLabel: UILabel = {
         let label = UILabel()
         label.text = "init(coder:) has not been implementedinit(coder:) has not been implementedinit(coder:) has not been implemented"
         label.numberOfLines = 0
@@ -39,7 +39,7 @@ class BottomSheetView: UIView {
         return label
     }()
     
-    private lazy var curveView: UIView = {
+    private var curveView: UIView = {
         let view = UIView()
         view.layer.cornerRadius = 12.0
         view.alpha = 1.0
@@ -47,7 +47,7 @@ class BottomSheetView: UIView {
         return view
     }()
     
-    private lazy var button: PrimaryButton = {
+    private var button: PrimaryButton = {
         let button = PrimaryButton()
         button.backgroundColor = .green
         button.titleText = "Login"

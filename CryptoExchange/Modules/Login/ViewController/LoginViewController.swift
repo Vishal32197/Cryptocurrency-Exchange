@@ -68,8 +68,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
 //                let vm = HomeScreenViewModel()
 //                let secondVC = HomeScreenViewController(viewModel: vm)
 //                self?.navigationController?.pushViewController(secondVC, animated: true)
-                let vm = HomeScreenViewModel()
-                let vc = HomeScreenViewController(viewModel: vm)
+               
+                let vc = TabBarViewController()
                 self.navigationController?.pushViewController(vc, animated: true)
             }).disposed(by: disposeBag)
     }

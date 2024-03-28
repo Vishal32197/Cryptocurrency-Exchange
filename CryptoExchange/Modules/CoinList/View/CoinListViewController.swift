@@ -1,5 +1,5 @@
 //
-//  HomeScreenViewController.swift
+//  CoinListViewController.swift
 //  CryptoExchange
 //
 //  Created by Bishal Ram on 23/09/23.
@@ -9,9 +9,9 @@ import UIKit
 import Stevia
 import RxSwift
 
-class HomeScreenViewController: UIViewController {
+class CoinListViewController: UIViewController {
     
-    private var viewModel: HomeScreenViewModelProtocol
+    private var viewModel: CoinListViewModelProtocol
     private let disposeBag = DisposeBag()
     
     private lazy var coinListTableView: UITableView = {
@@ -24,7 +24,7 @@ class HomeScreenViewController: UIViewController {
         return tableview
     }()
     
-    init(viewModel: HomeScreenViewModelProtocol) {
+    init(viewModel: CoinListViewModelProtocol) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
     }

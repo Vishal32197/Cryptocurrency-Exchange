@@ -8,21 +8,40 @@
 import Foundation
 import UIKit
 
+enum AppRoute {
+    case home
+    case profile
+    case settings
+    // Add more cases for other routes as needed
+}
+
+// Define a custom routing handler
 struct NavigationRouter {
-    
-    static var navigationController: UINavigationController = {
-        let initialViewController = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()
-        guard let navigationController = initialViewController as? UINavigationController else {
+    static func navigate(to route: AppRoute) {
+        guard let navigationController = UIApplication.shared.keyWindow?.rootViewController as? UINavigationController else {
             fatalError("Root view controller is not a UINavigationController")
         }
-        return navigationController
-    }()
-    
-    static func push(_ viewController: UIViewController) {
-        navigationController.pushViewController(viewController, animated: true)
+
+//        switch route {
+//        case .home:
+//            // Navigate to the home screen
+////            let homeVC = HomeViewController()
+////            navigationController.pushViewController(homeVC, animated: true)
+//        case .profile(let userID):
+//            // Navigate to the profile screen for the given user ID
+//            let profileVC = ProfileViewController()
+//            navigationController.pushViewController(profileVC, animated: true)
+//        case .settings:
+//            // Navigate to the settings screen
+//            let settingsVC = SettingsViewController()
+//            navigationController.pushViewController(settingsVC, animated: true)
+//        }
     }
-    
-    static func pop(animated: Bool = true) {
-        navigationController.popViewController(animated: animated)
+}
+
+// Example usage
+class SomeViewController: UIViewController {
+    func navigateToProfile(userID: String) {
+       
     }
 }
