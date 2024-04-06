@@ -1,4 +1,4 @@
-# Cryptocurrency-Exchange-iOS
+## Cryptocurrency-Exchange-iOS
 
 Project Overview 👔
 
@@ -8,9 +8,9 @@ Mobile app: Native iOS app
 
 Back end : [CoinCap](https://docs.coincap.io/#89deffa0-ab03-4e0a-8d92-637a857d2c91)
 
-Design: https:[//www.figma.com/community/file/1216633677090577347](https://www.figma.com/file/Q38zDs0KftjZxWZ2gd8C5I/Stockvest---Stock-App-Mobile-UI-Kit-(Community)?type=design&node-id=0-1&mode=design&t=sokqHXWjzoPAyiJx-0)
+Design: [Figma](//www.figma.com/community/file/1216633677090577347)
 
-Used technologies
+## Used technologies
 
 Swift - UIKit
 
